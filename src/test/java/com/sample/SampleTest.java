@@ -24,7 +24,7 @@ public class SampleTest {
 	}
 	@Test
 	public void testTitle(){
-		Assert.assertEquals("go",driver.getTitle(),"The Title of the FirstPage is not correct");
+		Assert.assertEquals("goo",driver.getTitle(),"The Title of the FirstPage is not correct");
 	}
 	@AfterMethod
 	public void tearDown(){
