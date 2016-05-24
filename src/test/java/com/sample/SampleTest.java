@@ -18,13 +18,14 @@ public class SampleTest {
 	public void setUp() throws Exception{
 		System.setProperty("webdriver.chrome.driver", "C:/Documents and Settings/admin/My Documents/Downloads/chromedriver.exe");
 		driver = new ChromeDriver();
+		
 		driver.get("http://www.google.com");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	@Test
 	public void testTitle(){
-		Assert.assertEquals("g",driver.getTitle(),"The Title of the FirstPage is not correct");
+		Assert.assertEquals("g",driver.getTitle(),"The new Title of the FirstPage is not correct");
 	}
 	@AfterMethod
 	public void tearDown(){
