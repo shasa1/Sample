@@ -24,9 +24,9 @@ public class SampleTest {
 	}
 	@Test
 	public void testTitle(){
-		Assert.assertEquals("g",driver.getTitle(),"The Title qwerty123 Tests of the FirstPage is not correct");
+		Assert.assertEquals("g",driver.getTitle(),"The Title qwerty123 No Test of the FirstPage is not correct");
 		
-		Assert.assertEquals("g",driver.getTitle(),"The Title of the FirstPage is correct");
+		//Assert.assertEquals("g",driver.getTitle(),"The Title of the FirstPage is correct");
 	}
 	@AfterMethod
 	public void tearDown(){
